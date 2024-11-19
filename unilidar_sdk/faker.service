@@ -1,0 +1,10 @@
+[Unit]
+Description=Run custom startup script
+
+[Service]
+Type=simple
+ExecStart=/home/orangepi/Desktop/startal.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
